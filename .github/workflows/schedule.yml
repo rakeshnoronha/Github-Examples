@@ -1,3 +1,4 @@
+name: schedule-demo
 on:
   schedule:
     - cron: '*/5 * * * *'
