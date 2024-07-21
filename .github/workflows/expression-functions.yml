@@ -27,8 +27,8 @@ jobs:
         run: "echo 'Issue labels: ${{ join(github.event.issue.labels.*.name, ', ') }}'"
       - name: Convert job context to JSON
         run: 'echo "Job context in JSON: ${{ toJSON(github.job) }}"'
-      - name: Hash files
-        run: "echo "Hash of files: ${{ hashFiles('**/package-lock.json', '**/Gemfile.lock') }}"
+      # - name: Hash files
+      #   run: "echo "Hash of files: ${{ hashFiles('**/package-lock.json', '**/Gemfile.lock') }}"
       # - name: The job has succeeded
       #   if: ${{ success() }}
       # - name: The job has failed
